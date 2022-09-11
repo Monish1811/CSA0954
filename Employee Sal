@@ -12,7 +12,8 @@ class Main{
             System.out.println("Bonous:"+d);
             System.out.print("Total salary payed:"+(d+b));
         }
-        else{
+        else
+        {
             d=b/10;
             System.out.println("Bonous:"+d);
             System.out.print("Total salary payed:"+(d+b));
