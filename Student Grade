@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class studentg
+{
+   public static void main(String[] args)
+   {
+      float[] marks = new float[4];
+      float sum=0, avg;
+      int i;
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.print("Enter Marks Obtained in Subjects: ");
+      for(i=0; i<4; i++)
+         marks[i] = scan.nextFloat();
+      
+      for(i=0; i<4; i++)
+         sum = sum + marks[i];
+      avg = sum/4;
+      
+      System.out.print("\nGrade = ");
+	  
+      if(avg>85)
+         System.out.println("Distinction");
+      else if(avg>=70 && avg<85)
+         System.out.println("First Distinction");
+      else if(avg>=60 && avg<70)
+         System.out.println("Second Distinction");
+      else if(avg>=50 && avg<60)
+         System.out.println("Third Distinction");
+      else
+         System.out.println("Fail");
+   }
+}
